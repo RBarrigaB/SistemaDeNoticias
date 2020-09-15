@@ -1,0 +1,90 @@
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-4.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Productos</title>
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="<%=request.getContextPath()%> /templates/style.css">
+<!------ Include the above in your HEAD tag ---------->
+</head>
+<body>
+	<br><h1 class="text-center">Sistema de noticias</h1><br><br>
+
+	<div class="card-group">
+ <!-- Noticia 1 --> 
+		<div class="card border-dark p-1 ml-4 mr-2"
+			style="max-width: 18rem; border: 1px solid;">
+			<div class="card-header bg-transparent border-dark">
+				<img class="img-fluid img-responsive" alt="" th:src="${noticia1_url}" />
+			</div>
+			<div class="card-body text-dark">
+				<h3 class="text-justify" th:text="${noticia1_encabezado}" /></h3><br>
+						<div class="card-body text-dark">
+					<h5 class="card-title text-justify" th:text="${noticia1_cuerpo}"></h5>
+				</div>
+			</div>
+		</div>
+ <!-- Noticia 2 --> 
+		<div class="card border-dark p-1 mr-2"
+			style="max-width: 18rem; border: 1px solid;">
+			<div class="card-header bg-transparent border-dark">
+				<img class="img-fluid img-responsive" alt="" th:src="${noticia2_url}" />
+			</div>
+			<div class="card-body text-dark">
+				<h3 class="text-justify" th:text="${noticia2_encabezado}" /></h3><br>
+					<div class="card-body text-dark">
+					<h5 class="card-title text-justify" th:text="${noticia2_cuerpo}"></h5>
+				</div>
+			</div>
+		</div>
+ <!-- Noticia 3 --> 
+		<div class="card border-dark p-1 mr-2"
+			style="max-width: 18rem; border: 1px solid;">
+			<div class="card-header bg-transparent border-dark">
+				<img class="img-fluid img-responsive" alt="" th:src="${noticia3_url}" />
+			</div>
+			<div class="card-body text-dark">
+				<h3 class="text-justify" th:text="${noticia3_encabezado}" /></h3><br>
+						<div class="card-body text-dark">
+					<h5 class="card-title text-justify" th:text="${noticia3_cuerpo}"></h5>
+				</div>
+			</div>
+		</div>
+ <!-- Noticia 4 --> 
+		<div class="card border-dark p-1 mr-2"
+			style="max-width: 18rem; border: 1px solid;">
+			<div class="card-header bg-transparent border-dark">
+				<img class="img-fluid img-responsive" alt="" th:src="${noticia4_url}" />
+			</div>
+			<div class="card-body text-dark">
+				<h3 class="text-justify" th:text="${noticia4_encabezado}" /></h3><br>
+							<div class="card-body text-dark">
+					<h5 class="card-title text-justify" th:text="${noticia4_cuerpo}"></h5>
+				</div>
+			</div>
+		</div>
+ <!-- Noticia 5 --> 
+		<div class="card border-dark p-1 mr-2"
+			style="max-width: 18rem; border: 1px solid;">
+			<div class="card-header bg-transparent border-dark">
+				<img class="img-fluid img-responsive" alt="" th:src="${noticia5_url}" />
+			</div>
+			<div class="card-body text-dark">
+				<h3 class="text-justify" th:text="${noticia5_encabezado}" /></h3>
+				<div class="card-body text-dark">
+					<h5 class="card-title text-justify" th:text="${noticia5_cuerpo}"></h5>
+				</div>
+			</div>
+	</div>
+</div><br>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script
+		src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>
